@@ -3,6 +3,6 @@
 lib = File.expand_path('../../lib', __FILE__)
 $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
 
-require 'gumby'
+require 'buck'
 
-Gumby::Commands::Main.run
+puts Buck::Commands::Main.run
