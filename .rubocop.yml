@@ -13,16 +13,7 @@ Style/FormatString:
 Metrics/LineLength:
   Enabled: false
 
-Style/GlobalVars:
-  Enabled: false
-
-Style/RegexpLiteral:
-  EnforcedStyle: mixed
-  AllowInnerSlashes: false
-
 Metrics/ClassLength:
   CountComments: false
   Max: 150
 
-Style/SpaceAroundEqualsInParameterDefault:
-  Enabled: false

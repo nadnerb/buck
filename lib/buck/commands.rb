@@ -1,3 +1,5 @@
+require 'clamp'
+require 'buck/version'
 require 'buck/commands/main'
 
 module Buck
