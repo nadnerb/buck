@@ -1,15 +1,8 @@
 module Buck
   module Commands
-    class Main < Clamp::Command
+    class Main < Base
 
-      option('--version', :flag, 'show version') do
-        puts Buck::VERSION
-        exit(0)
-      end
-
-      def execute
-        'nothing yet'
-      end
+      subcommand 'build', 'Use terraform to build infrastructure', Build
 
     end
   end

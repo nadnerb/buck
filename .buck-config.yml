@@ -1,0 +1,2 @@
+terraform:
+  github: 'https://github.com/PageUpPeopleOrg/aws-elasticsearch-cluster.git'

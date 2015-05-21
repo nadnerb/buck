@@ -1,5 +1,7 @@
+require 'dotenv'
+Dotenv.load
+
 require 'buck/commands'
-require 'buck/config'
 
 module Buck
 end

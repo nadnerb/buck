@@ -1,9 +1,3 @@
-require 'dotenv'
-Dotenv.load
-
-require 'climate_control'
-require 'timecop'
-
 begin
   require 'pry-byebug'
 rescue LoadError
@@ -18,14 +12,10 @@ SimpleCov.start
 
 $LOAD_PATH.unshift File.expand_path('../../../lib', __FILE__)
 
-Dir['./spec/unit/support/**/*.rb'].sort.each { |f| require(f) }
+Dir['./spec/integration/support/**/*.rb'].sort.each { |f| require(f) }
 
 RSpec.configure do |config|
   config.filter_run_excluding broken: true
 end
 
 require 'buck'
-
-def with_modified_env(options, &block)
-  ClimateControl.modify(options, &block)
-end
